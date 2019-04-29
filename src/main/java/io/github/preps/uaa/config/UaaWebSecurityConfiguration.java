@@ -32,9 +32,7 @@ public class UaaWebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @PostConstruct
     public void init() throws Exception {
         try {
-            authenticationManagerBuilder
-                .userDetailsService(userDetailsService)
-                .passwordEncoder(passwordEncoder());
+            authenticationManagerBuilder.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
         } catch (Exception e) {
             throw new BeanInitializationException("Security configuration failed", e);
         }
@@ -55,13 +53,13 @@ public class UaaWebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring()
-            .antMatchers(HttpMethod.OPTIONS, "/**")
-            .antMatchers("/app/**/*.{js,html}")
-            .antMatchers("/i18n/**")
-            .antMatchers("/content/**")
-            .antMatchers("/swagger-ui/index.html")
-            .antMatchers("/test/**")
-            .antMatchers("/h2-console/**");
+           .antMatchers(HttpMethod.OPTIONS, "/**")
+           .antMatchers("/app/**/*.{js,html}")
+           .antMatchers("/i18n/**")
+           .antMatchers("/content/**")
+           .antMatchers("/swagger-ui/index.html")
+           .antMatchers("/test/**")
+           .antMatchers("/h2-console/**");
     }
 
     @Bean

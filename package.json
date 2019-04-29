@@ -1,9 +1,9 @@
 {
     "name": "prepaymentsuaa",
-    "version": "0.0.0",
-    "description": "Description for prepaymentsuaa",
+    "version": "0.0.1",
+    "description": "OAuth Server for Prepayments Systems",
     "private": true,
-    "license": "UNLICENSED",
+    "license": "MIT",
     "cacheDirectories": [
         "node_modules"
     ],

@@ -145,14 +145,14 @@ jhipster:
         from: prepaymentsuaa@localhost
     swagger:
         default-include-pattern: /api/.*
-        title: prepaymentsuaa API
-        description: prepaymentsuaa API documentation
+        title: PREPAYMENTS - UAA API
+        description: PREPAYMENTS-UAA API documentation
         version: 0.0.1
         terms-of-service-url:
-        contact-name:
-        contact-url:
-        contact-email:
-        license:
+        contact-name: Edwin Njeru
+        contact-url: https://github.com/prepayments/prepayments_uaa
+        contact-email: mailnjeru@gmail.com
+        license: MIT
         license-url:
 
 # ===================================================================
